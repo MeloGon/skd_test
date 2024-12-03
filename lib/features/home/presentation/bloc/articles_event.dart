@@ -8,3 +8,5 @@ sealed class ArticlesEvent extends Equatable {
 }
 
 class GetArticlesEvent extends ArticlesEvent {}
+
+class RefreshArticlesEvent extends ArticlesEvent {}

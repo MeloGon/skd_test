@@ -1,10 +1,15 @@
 import 'package:ekd_test/core/di/service_locator.dart';
 import 'package:ekd_test/core/router/app_router.dart';
+import 'package:ekd_test/features/home/data/models/article_model.dart';
 import 'package:ekd_test/features/home/presentation/bloc/articles_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hive_ce_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  Hive.registerAdapter(ArticleModelAdapter());
+  await Hive.openBox<ArticleModel>('articlesBox');
   serviceLocatorInit();
   runApp(const BlocProviders());
 }
