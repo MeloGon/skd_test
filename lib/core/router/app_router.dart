@@ -1,15 +1,26 @@
+import 'package:bloc/bloc.dart';
 import 'package:ekd_test/features/home/presentation/screens/home_screen.dart';
 import 'package:go_router/go_router.dart';
-import 'package:riverpod_annotation/riverpod_annotation.dart';
-part 'app_router.g.dart';
 
-@riverpod
-// ignore: deprecated_member_use_from_same_package
-GoRouter appRouter(AppRouterRef ref) {
-  return GoRouter(routes: [
+final _publicRouter = GoRouter(
+  routes: [
     GoRoute(
       path: '/',
       builder: (context, state) => const HomeScreen(),
-    )
-  ]);
+    ),
+
+    //GoRoute(path: '/', builder: (context, state) => const SplashScreen()),
+  ],
+);
+
+class RouterCubit extends Cubit<GoRouter> {
+  RouterCubit() : super(_publicRouter);
+
+  void goBack() {
+    state.pop();
+  }
+
+  void goHome() {
+    state.push('/home');
+  }
 }

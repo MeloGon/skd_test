@@ -26,7 +26,7 @@ class CustomAppbar extends PreferredSize {
   Widget build(BuildContext context) {
     return AppBar(
       automaticallyImplyLeading: false,
-      centerTitle: false,
+      centerTitle: true,
       flexibleSpace: Container(
           // decoration: const BoxDecoration(
           //   gradient: LinearGradient(
