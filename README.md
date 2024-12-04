@@ -14,7 +14,7 @@ Requerimientos para poder correr el proyecto:
   
 ## Apk 
 
-https://drive.google.com/file/d/1dhYDz_9AhwwQsrD76OPwusZIcuV1MQAb/view?usp=sharing
+https://drive.google.com/file/d/177T-W4dz0Wgpj1kIpTw38wNOHDz1n_Ec/view?usp=sharing
 
   
 
