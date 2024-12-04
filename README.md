@@ -1,16 +1,20 @@
 # ekd_test
 
-A new Flutter project.
+Resolucion del test
+Requerimientos para poder correr el proyecto:
+- Flutter 3.24.5
+- Para android Java 21.0.3
+  
+## Comentarios Adicionales
 
-## Getting Started
+- Se cumple con todos los requisitos
+- Se esta utilizando clean architecture con bloc
+- En cuanto a los paquetes tengo cierta afinidad con Dio como client network
+- Para la data local se utiliza el paquete hive , ya no que no habia operaciones completas opte por este paquete nosql
+  
+## Apk 
 
-This project is a starting point for a Flutter application.
+https://drive.google.com/file/d/1dhYDz_9AhwwQsrD76OPwusZIcuV1MQAb/view?usp=sharing
 
-A few resources to get you started if this is your first Flutter project:
+  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
